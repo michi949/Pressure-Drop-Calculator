@@ -1,0 +1,29 @@
+.header {
+
+  background-color: #CBD7DD;
+  color: white;
+
+  .logo {
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border-radius: 4px;
+
+    & a {
+      color: #506069;
+      margin-right: 0;
+    }
+
+    & img {
+      margin-right: 10px;
+    }
+  }
+
+  .state-bar {
+    margin-right: 20px;
+  }
+}
+
+.footer {
+  color: white;
+  background-color: #506069;
+}
