@@ -1,8 +1,17 @@
-import {Routes} from '@angular/router';
+import { NgModule } from "@angular/core";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
-  { path: 'calc', component: FirstComponent },
-  { path: 'import', component: SecondComponent },
-  { path: 'export', component: FirstComponent },
-  { path: 'settings', component: SecondComponent },
+  {
+    path: "calculation",
+    loadChildren: () => import("./components/calculation/calculation.module").then( m => m.CalculationPageModule),
+  }
 ];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

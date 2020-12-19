@@ -38,6 +38,14 @@
     border: 2px solid #FC7900;
     border-radius: 6px;
 
+    .sidebar-header {
+      width: 100%; 
+      text-align: center; 
+      padding: 10px 0 10px 0; 
+      background-color: #FC7900;
+      color: white;
+    }
+
     .list-group .list-group-item {
       border: 0px;
       padding: 5px 0 5px 0;
@@ -46,6 +54,20 @@
         width: 100%;
         background-color: white;
         border: 0px;
+      }
+
+      button:hover {
+        color: white;
+        background-color: #CBD7DD;
+      }
+
+      button:focus {
+        color: white;
+        background-color: #CBD7DD;
+      }
+
+      .btn:focus {
+        box-shadow: none;
       }
     }
   }
@@ -63,3 +85,6 @@
   background-color: #506069;
 }
 
+#root-container {
+  height: 100%;
+}
