@@ -1,11 +1,11 @@
 <div class="container-fluid section-header">
     Rechner
   </div>
-  
-<div *ngIf="projectManagment.currentProject !== null; else setupProject">
-    <app-project-setup></app-project-setup>
+
+<div *ngIf="projectManagment.currentProject != null; else setupProject">
+  <app-project-calc></app-project-calc>
 </div>
 
 <ng-template #setupProject>
-    <app-project-calc></app-project-calc>
+  <app-project-setup></app-project-setup>
 </ng-template>

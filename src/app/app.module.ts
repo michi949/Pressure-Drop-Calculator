@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { ProjectManagment } from './services/project-managment';
 import { CommonModule } from '@angular/common';
+import {CalculationPageModule} from './components/calculation/calculation.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,4 @@ import { CommonModule } from '@angular/common';
     ProjectManagment
   ],
   bootstrap: [AppComponent]
-})
-
-export class AppModule {
-}
+}) export class AppModule {}

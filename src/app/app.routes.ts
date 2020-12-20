@@ -1,6 +1,6 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { CalculationPage } from './components/calculation/calculation.page';
 import { ExportPage } from './components/export/export.page';
 import { ImportPage } from './components/import/import.page';
@@ -8,19 +8,19 @@ import { SettingsPage } from './components/settings/settings.page';
 
 const routes: Routes = [
   {
-    path: "calculation",
+    path: 'calculation',
     component: CalculationPage
   },
   {
-    path: "export",
+    path: 'export',
     component: ExportPage
   },
   {
-    path: "import",
+    path: 'import',
     component: ImportPage
   },
   {
-    path: "settings",
+    path: 'settings',
     component: SettingsPage
   }
 ];
