@@ -1,0 +1,36 @@
+.container {
+  margin-top: 20px;
+}
+
+.card {
+  margin-bottom: 50px;
+}
+
+.card-header {
+  background-color: #CBD7DD;
+  border: 0px;
+  color: #506069;
+  font-size: 20px;
+
+  button {
+    background-color: #506069;
+    color: white;
+  }
+}
+
+.card-footer {
+  background-color: #CBD7DD;
+  border: 0px;
+
+  button {
+    background-color: #fc7900;
+    color: white;
+
+  }
+}
+
+.card-body {
+  label {
+    color: #506069;
+  }
+}

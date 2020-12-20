@@ -1,10 +1,11 @@
 export interface IProject {
-    name: String
-    id: number
-    editor: String
-    tubes: ITube[]
-    resists: IResist[]
-    variousParts: IVariousPart[]
+    name: string;
+    id: number;
+    editor: string;
+    description: string;
+    tubes: ITube[];
+    resists: IResist[];
+    variousParts: IVariousPart[];
 }
 
 export interface ITube {

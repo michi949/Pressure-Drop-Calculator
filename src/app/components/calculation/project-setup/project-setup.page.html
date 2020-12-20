@@ -1,4 +1,46 @@
-<div> 
-    Setup 
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <div class="d-flex align-items-center">
+        <div>
+          Neues Projekt
+        </div>
+        <div class="ml-auto">
+          <button type="button" class="btn"> Importieren </button>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4">
+            <label for="name">Projekt Name*</label>
+            <input [formControl]="projectGroup.get('name')" type="text" class="form-control" id="name" placeholder="Reder-GmbH">
+          </div>
+          <div class="col-4">
+            <label for="number">Projekt Nummer*</label>
+            <input [formControl]="projectGroup.get('id')"  type="number" class="form-control" id="number" placeholder="123456789">
+          </div>
+          <div class="col-4">
+            <label for="editor">Bearbeiter*</label>
+            <input [formControl]="projectGroup.get('editor')"  type="text" class="form-control" id="editor" placeholder="Michael Reder">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12" style="margin-top: 20px">
+            <label for="description">Beschreibung</label>
+            <textarea [formControl]="projectGroup.get('description')"  class="form-control" id="description" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="card-footer d-flex justify-content-end">
+      <button (click)="submitNewProject()" type="button" class="btn"> Weiter... </button>
+    </div>
+  </div>
 
 </div>

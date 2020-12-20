@@ -83,8 +83,6 @@
       }
     },
     "typedef": [
-      true,
-      "call-signature"
     ],
     "typedef-whitespace": {
       "options": [

@@ -6,7 +6,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-import { ProjectManagment } from './services/project-managment';
+import { ProjectManagement } from './services/project-management.service';
 import { CommonModule } from '@angular/common';
 import {CalculationPageModule} from './components/calculation/calculation.module';
 
@@ -23,7 +23,7 @@ import {CalculationPageModule} from './components/calculation/calculation.module
     RouterModule,
   ],
   providers: [
-    ProjectManagment
+    ProjectManagement
   ],
   bootstrap: [AppComponent]
 }) export class AppModule {}

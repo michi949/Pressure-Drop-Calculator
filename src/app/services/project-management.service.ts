@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { IProject } from '../interfaces/project';
 
 @Injectable()
-export class ProjectManagment {
+export class ProjectManagement {
     public currentProject: IProject = null;
 
     constructor() {
@@ -14,7 +14,7 @@ export class ProjectManagment {
     }
 
     public getProjectFromLocalStroage() {
-        var stringObject = localStorage.getItem('testObject');
-        this.currentProject = JSON.parse(stringObject); 
+        const stringObject = localStorage.getItem('testObject');
+        this.currentProject = JSON.parse(stringObject);
     }
 }

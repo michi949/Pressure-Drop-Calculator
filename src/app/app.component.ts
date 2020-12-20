@@ -1,6 +1,6 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ProjectManagment } from './services/project-managment';
+import { ProjectManagement } from './services/project-management.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ import { ProjectManagment } from './services/project-managment';
 export class AppComponent implements OnInit {
   title = 'Reder Systems Druckverlust';
 
-  public constructor(private projectManagment: ProjectManagment) {}
+  public constructor(private projectManagment: ProjectManagement) {}
 
   ngOnInit(): void {
     this.projectManagment.getProjectFromLocalStroage()
