@@ -71,13 +71,6 @@
       }
     }
   }
-
-  .section-header {
-    background-color: #506069;
-    padding: 15px 0 15px 20px;
-    font-size: 20px;
-    color: white;
-  }
 }
 
 .footer {
@@ -86,7 +79,5 @@
 }
 
 #root-container {
-  min-height: -moz-calc(100% - 40px); /* Firefox */
-  min-height: -webkit-calc(100% - 40px); /* Chrome, Safari */
-  min-height: calc(100% - 40px); /* IE9+ and future browsers */
+  min-height: 100%
 }

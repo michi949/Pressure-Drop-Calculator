@@ -15,6 +15,7 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     AppRoutingModule,
