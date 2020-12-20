@@ -30,10 +30,10 @@
               <span style="font-size: 18px;"> Tools </span>
             </div>
             <ul class="list-group">
-              <li class="list-group-item"><button type="button" class="btn text-left" [routerLink]="/calculation" routerDirection="root">Rechner</button></li>
-              <li class="list-group-item"><button type="button" class="btn text-left">Speichern</button></li>
-              <li class="list-group-item"><button type="button" class="btn text-left">Import</button></li>
-              <li class="list-group-item"><button type="button" class="btn text-left">Einstellungen</button></li>
+              <li class="list-group-item"> <a routerLink="/calculation" routerDirection="root"><button class="btn text-left" >Rechner</button></a></li>
+              <li class="list-group-item"> <a routerLink="/export" routerDirection="root"><button class="btn text-left" >Export</button></a></li>
+              <li class="list-group-item"> <a routerLink="/import" routerDirection="root"><button class="btn text-left" >Import</button></a></li>
+              <li class="list-group-item"> <a routerLink="/settings" routerDirection="root"><button class="btn text-left" >Settings</button></a></li>
             </ul>
           </div>
         </div>
@@ -41,13 +41,9 @@
             <div class="container-fluid section-header">
               Rechner
             </div>
-
-
-            <router-outlet id="root-container"></router-outlet>
-
-            <!--
-            <div id="root-container" *ngFor="let page of pages" [routerLink]="[page.url]" routerDirection="root" [replaceUrl]="true"></div>-->
-
+            <div id="root-container">
+              <router-outlet></router-outlet>
+            </div>
         </div>
       </div>
   </div>

@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
-import { CalculationPage } from './calculation.page';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ExportPage } from './export.page';
 
 @NgModule({
     imports: [
@@ -11,10 +11,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         FontAwesomeModule,
     ],
     declarations: [
-        CalculationPage
+        ExportPage
     ],
     providers: [
 
     ],
   })
-  export class CalculationPageModule { }
+  export class ExportPageModule { }
