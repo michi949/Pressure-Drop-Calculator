@@ -1,4 +1,7 @@
-<div> 
-    asdasdasd 
-
+<div *ngIf="projectManagment.currentProject !== null; else setupProject">
+    <app-project-setup></app-project-setup>
 </div>
+
+<ng-template #setupProject>
+    <app-project-calc></app-project-calc>
+</ng-template>

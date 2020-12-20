@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ProjectManagment } from 'src/app/services/project-managment';
 
 @Component({
     selector: "app-calculation",
@@ -7,15 +8,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   })
   export class CalculationPage implements OnInit, OnDestroy  {
 
-    public constructor() {
+    public constructor(public projectManagment: ProjectManagment) {}
 
-    }
+    ngOnInit(): void {}
 
-    ngOnInit(): void {
-     
-    }
-    ngOnDestroy(): void {
-      
-    } 
+    ngOnDestroy(): void {} 
 
   }

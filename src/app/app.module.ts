@@ -6,6 +6,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { ProjectManagment } from './services/project-managment';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,11 @@ import { RouterModule } from '@angular/router';
     BrowserAnimationsModule,
     FontAwesomeModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
   ],
-  providers: [],
+  providers: [
+    ProjectManagment
+  ],
   bootstrap: [AppComponent]
 })
 
