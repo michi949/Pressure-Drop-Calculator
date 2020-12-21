@@ -28,10 +28,10 @@
               <span style="font-size: 18px;"> Tools </span>
             </div>
             <ul class="list-group">
-              <li class="list-group-item"> <a routerLink="/calculation" routerDirection="root"><button class="btn text-left" >Rechner</button></a></li>
-              <li class="list-group-item"> <a routerLink="/export" routerDirection="root"><button class="btn text-left" >Export</button></a></li>
-              <li class="list-group-item"> <a routerLink="/import" routerDirection="root"><button class="btn text-left" >Import</button></a></li>
-              <li class="list-group-item"> <a routerLink="/settings" routerDirection="root"><button class="btn text-left" >Settings</button></a></li>
+              <li class="list-group-item"> <a routerLink="/calculation" routerDirection="root"><button class="btn text-left"> <fa-icon [icon]="['fas','calculator']"></fa-icon> <span style="padding-left: 10px">Rechner</span> </button></a></li>
+              <li class="list-group-item"> <a routerLink="/export" routerDirection="root"><button class="btn text-left"> <fa-icon [icon]="['fas','save']"></fa-icon> <span style="padding-left: 10px">Speichern</span></button></a></li>
+              <li class="list-group-item"> <a routerLink="/import" routerDirection="root"><button class="btn text-left"> <fa-icon [icon]="['fas','file-excel']"></fa-icon> <span style="padding-left: 10px">Import</span></button></a></li>
+              <li class="list-group-item"> <a routerLink="/settings" routerDirection="root"><button class="btn text-left"> <fa-icon [icon]="['fas','cog']"></fa-icon> <span style="padding-left: 10px">Settings</span></button></a></li>
             </ul>
           </div>
         </div>
@@ -42,9 +42,13 @@
   </div>
 
 <nav class="navbar fixed-bottom navbar-light footer">
-      @Copyright Michael Reder
+  <div class="justify-content-start">
+  <fa-icon [icon]="['far','copyright']"></fa-icon>
+  <span style="padding-left: 5px">Copyright Michael Reder </span>
+  </div>
 
   <div class="justify-content-end" style="font-size: 14px">
-    <span>  Druckverlust v1.0.0</span>
+    <fa-icon [icon]="['fas','tv']"></fa-icon>
+    <span style="padding-left: 5px">Druckverlust v1.0.0</span>
   </div>
 </nav>

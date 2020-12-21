@@ -10,10 +10,11 @@ import { ProjectManagement } from './services/project-management.service';
 export class AppComponent implements OnInit {
   title = 'Reder Systems Druckverlust';
 
+
   public constructor(private projectManagment: ProjectManagement) {}
 
   ngOnInit(): void {
-    this.projectManagment.getProjectFromLocalStroage()
+    this.projectManagment.getProjectFromLocalStroage();
 
 
   }

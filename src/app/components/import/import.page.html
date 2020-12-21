@@ -1,3 +1,21 @@
-<div> 
-Import
+<div class="container-fluid section-header">
+  Import
+</div>
+
+
+<div class="container central-content-body">
+  <div class="row h-100 justify-content-center align-items-center">
+      <div class="dropZone" appDragDrop (onFileDropped)="uploadFile($event)">
+        <div class="container h-100">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="d-flex flex-column align-items-center">
+              <fa-icon style="color: #FC7900; margin-bottom: 15px" class="fa-6x p-1" [icon]="['fas','file-excel']"></fa-icon>
+              <span style="font-size: 16px;" class="p-1">Datei hier ablegen oder...</span>
+              <div class="p-1"><input type="file" class="form-control-file" (change)="uploadFile($event)"></div>
+              <button [disabled]="this.file === null" (click)="this.loadDataFromFile()" type="button" style="background-color: #fc7900; color: white; margin-top: 10px" class="btn p-1 align-self-end"> Weiter </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
 </div>

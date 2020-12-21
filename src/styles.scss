@@ -11,3 +11,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-size: 20px;
     color: white;
   }
+
+
+.central-content-body {
+  height: -moz-calc(100% - 50px); /* Firefox */
+  height: -webkit-calc(100% - 50px); /* Chrome, Safari */
+  height: calc(100% - 50px); /* IE9+ and future browsers */
+}

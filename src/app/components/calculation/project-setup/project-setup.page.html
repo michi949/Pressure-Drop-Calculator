@@ -6,7 +6,7 @@
           Neues Projekt
         </div>
         <div class="ml-auto">
-          <button type="button" class="btn"> Importieren </button>
+          <a routerLink="/import" routerDirection="root"><button type="button" class="btn"> Importieren </button></a>
         </div>
       </div>
     </div>
@@ -16,21 +16,21 @@
         <div class="row">
           <div class="col-4">
             <label for="name">Projekt Name*</label>
-            <input [formControl]="projectGroup.get('name')" type="text" class="form-control" id="name" placeholder="Reder-GmbH">
+            <input [formControl]="projectGroup.get('name')" type="text" class="form-control" id="name" placeholder="Projekt Name">
           </div>
           <div class="col-4">
             <label for="number">Projekt Nummer*</label>
-            <input [formControl]="projectGroup.get('id')"  type="number" class="form-control" id="number" placeholder="123456789">
+            <input [formControl]="projectGroup.get('id')"  type="number" class="form-control" id="number" placeholder="Projekt Nummer">
           </div>
           <div class="col-4">
             <label for="editor">Bearbeiter*</label>
-            <input [formControl]="projectGroup.get('editor')"  type="text" class="form-control" id="editor" placeholder="Michael Reder">
+            <input [formControl]="projectGroup.get('editor')"  type="text" class="form-control" id="editor" placeholder="Bearbeiter">
           </div>
         </div>
         <div class="row">
           <div class="col-12" style="margin-top: 20px">
             <label for="description">Beschreibung</label>
-            <textarea [formControl]="projectGroup.get('description')"  class="form-control" id="description" rows="3"></textarea>
+            <textarea [formControl]="projectGroup.get('description')"  style="min-height:100px" placeholder="Beschreibung" class="form-control" id="description" rows="4"></textarea>
           </div>
         </div>
       </div>
