@@ -22,6 +22,9 @@ import {CalculationPageModule} from './components/calculation/calculation.module
     AppRoutingModule,
     RouterModule,
   ],
+  export: [
+    FontAwesomeModule,
+  ],
   providers: [
     ProjectManagement
   ],
