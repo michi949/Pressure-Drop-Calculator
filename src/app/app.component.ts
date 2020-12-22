@@ -11,11 +11,10 @@ export class AppComponent implements OnInit {
   title = 'Reder Systems Druckverlust';
 
 
-  public constructor(private projectManagment: ProjectManagement) {}
+  public constructor(private projectManagement: ProjectManagement) {
+  }
 
   ngOnInit(): void {
-    this.projectManagment.getProjectFromLocalStroage();
-
-
+    this.projectManagement.getProjectFromLocalStorage();
   }
 }

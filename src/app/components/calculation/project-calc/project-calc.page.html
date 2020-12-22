@@ -1,4 +1,36 @@
-<div> 
-    Calc 
-
+<div class="container-fluid calc-toolbar">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <button type="button" (click)="newProject()" class="btn"> Neues Projekt </button>
+    </div>
+    <div style="font-size: 20px; color: black;">
+      {{ this.currentProject.name + ' / ' + this.currentProject.editor }}
+    </div>
+    <div>
+      <button type="button" style="margin-right: 10px" class="btn"><fa-icon [icon]="['fas','edit']"></fa-icon></button>
+      <button type="button" routerLink="/export" routerDirection="root" class="btn"><fa-icon [icon]="['fas','save']"></fa-icon></button>
+    </div>
+  </div>
 </div>
+
+<div class="card text-center h-100">
+    <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+    <div class="card-body h-100">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+

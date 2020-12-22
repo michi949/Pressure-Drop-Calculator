@@ -39,6 +39,7 @@ import {ProjectManagement} from '../../../services/project-management.service';
           variousParts: []};
 
         this.projectManagement.currentProject = project;
+        this.projectManagement.saveProjectToLocalStorage();
       } else {
 
       }

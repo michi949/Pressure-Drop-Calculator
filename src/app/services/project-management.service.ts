@@ -13,8 +13,8 @@ export class ProjectManagement {
         localStorage.setItem('project', JSON.stringify(this.currentProject));
     }
 
-    public getProjectFromLocalStroage() {
-        const stringObject = localStorage.getItem('testObject');
+    public getProjectFromLocalStorage() {
+        const stringObject = localStorage.getItem('project');
         this.currentProject = JSON.parse(stringObject);
     }
 }

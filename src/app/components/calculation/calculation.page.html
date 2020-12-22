@@ -4,9 +4,9 @@
 </div>
 
 
-<ng-template *ngIf="projectManagment.currentProject != null; else setupProject">
+<div *ngIf="projectManagement.currentProject != null; else setupProject">
   <app-project-calc></app-project-calc>
-</ng-template>
+</div>
 
 <ng-template #setupProject>
   <app-project-setup></app-project-setup>

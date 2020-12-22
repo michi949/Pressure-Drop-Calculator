@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {AppRoutingModule} from '../../app.routes';
+import {ProjectInfoModal} from './project-info/project-info.modal';
 
 @NgModule({
     imports: [
@@ -22,7 +23,8 @@ import {AppRoutingModule} from '../../app.routes';
     declarations: [
         CalculationPage,
         ProjectCalcPage,
-        ProjectSetupPage
+        ProjectSetupPage,
+        ProjectInfoModal
     ],
     providers: [
 
