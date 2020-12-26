@@ -1,6 +1,6 @@
 .calc-toolbar {
-  background-color: #EFF2F4;
-  color: #506069;
+  background-color: #506069;
+  color: white;
   padding: 10px 10px 10px 10px;
 
   button {
@@ -8,5 +8,44 @@
     color: white;
     padding-bottom: 3px;
     padding-top: 3px;
+  }
+}
+
+
+.card {
+  margin-top: 15px;
+  height: -moz-calc(100% - 67px); /* Firefox */
+  height: -webkit-calc(100% - 67px); /* Chrome, Safari */
+  height: calc(100% - 67px); /* IE9+ and future browsers */
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.card-header {
+  background-color: #cbd7dc;
+  border-bottom: 0px;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: #506069;
+}
+
+.card-footer {
+  background-color: #cbd7dc;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-top: 0px;
+
+  span {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+
+  input {
+    width: 10%;
+    background-color: white;
   }
 }

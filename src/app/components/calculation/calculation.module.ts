@@ -9,13 +9,15 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import {AppRoutingModule} from '../../app.routes';
 import {ProjectInfoModal} from './project-info/project-info.modal';
+import { ResistCalcPage } from './project-calc/calc-pages/resist-calc/resist-calc.page';
+import { OtherCalcPage } from './project-calc/calc-pages/other-calc/other-calc.page';
+import { TubeCalcPage } from './project-calc/calc-pages/tube-calc/tube-calc.page';
 
 @NgModule({
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
         FontAwesomeModule,
-        CommonModule,
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule
@@ -24,7 +26,10 @@ import {ProjectInfoModal} from './project-info/project-info.modal';
         CalculationPage,
         ProjectCalcPage,
         ProjectSetupPage,
-        ProjectInfoModal
+        ProjectInfoModal,
+        TubeCalcPage,
+        ResistCalcPage,
+        OtherCalcPage
     ],
     providers: [
 

@@ -5955,7 +5955,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-ng-bootstrap@8.0.0:
+ng-bootstrap@1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/ng-bootstrap/-/ng-bootstrap-1.6.3.tgz#d41fd42154c0593422cb83c473a3828aa7525bf5"
   integrity sha1-1B/UIVTAWTQiy4PEc6OCiqdSW/U=

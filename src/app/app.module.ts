@@ -20,7 +20,6 @@ import {ImportModule} from './components/import/import.module';
   ],
   imports: [
     BrowserModule,
-    CommonModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     AppRoutingModule,

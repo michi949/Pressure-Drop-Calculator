@@ -3,8 +3,8 @@
     <div>
       <button type="button" (click)="newProject()" class="btn"> Neues Projekt </button>
     </div>
-    <div style="font-size: 20px; color: black;">
-      {{ this.currentProject.name + ' / ' + this.currentProject.editor }}
+    <div style="font-size: 20px; color: white;">
+      {{ this.currentProject.id + ' / ' + this.currentProject.name + ' / ' + this.currentProject.editor }}
     </div>
     <div>
       <button type="button" style="margin-right: 10px" class="btn"><fa-icon [icon]="['fas','edit']"></fa-icon></button>
@@ -13,24 +13,37 @@
   </div>
 </div>
 
-<div class="card text-center h-100">
+<div class="card text-center">
     <div class="card-header">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Tube}" (click)="changeActivePage(ActiveCalcPage.Tube)"> Rohre </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Resist}" (click)="changeActivePage(ActiveCalcPage.Resist)"> Wiederstände </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Other}" (click)="changeActivePage(ActiveCalcPage.Other)"> Sonstiges </a>
         </li>
       </ul>
     </div>
-    <div class="card-body h-100">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="card-body">
+      <div [ngSwitch]="this.activePage">
+        <div *ngSwitchCase="ActiveCalcPage.Resist">
+          <app-resist-calc></app-resist-calc>
+        </div>
+        <div *ngSwitchCase="ActiveCalcPage.Tube">
+          <app-tube-calc></app-tube-calc>
+        </div>
+        <div *ngSwitchCase="ActiveCalcPage.Other">
+            <app-other-calc></app-other-calc>
+        </div>
+      </div>
+
+    </div>
+    <div class="card-footer d-flex justify-content-end align-items-center">
+      <span> Total: </span>
+      <input disabled type="text" class="form-control" placeholder="PA">
     </div>
 </div>
 

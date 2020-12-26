@@ -1,10 +1,10 @@
 
-<div class="container-fluid section-header">
+<div *ngIf="projectManagement.currentProject == null" class="container-fluid section-header">
     Rechner
 </div>
 
 
-<div *ngIf="projectManagement.currentProject != null; else setupProject">
+<div style="height: 100%;" *ngIf="projectManagement.currentProject != null; else setupProject">
   <app-project-calc></app-project-calc>
 </div>
 
