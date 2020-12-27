@@ -14,20 +14,25 @@
 </div>
 
 <div class="card text-center">
-    <div class="card-header">
+    <div class="card-header d-flex justify-content-between">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
-          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Tube}" (click)="changeActivePage(ActiveCalcPage.Tube)"> Rohre </a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Tube}" (click)="changeActivePage(ActiveCalcPage.Tube)"> Rohrreibungsverlust </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Resist}" (click)="changeActivePage(ActiveCalcPage.Resist)"> Wiederstände </a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Resist}" (click)="changeActivePage(ActiveCalcPage.Resist)"> Einzelwiederstände </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Other}" (click)="changeActivePage(ActiveCalcPage.Other)"> Sonstiges </a>
+          <a class="nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Other}" (click)="changeActivePage(ActiveCalcPage.Other)"> Einbauwiederstände </a>
+        </li>
+      </ul>
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link add-nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Add}" (click)="changeActivePage(ActiveCalcPage.Add)"> Hinzufügen </a>
         </li>
       </ul>
     </div>
-    <div class="card-body">
+    <div class="card-body overflow-auto">
       <div [ngSwitch]="this.activePage">
         <div *ngSwitchCase="ActiveCalcPage.Resist">
           <app-resist-calc></app-resist-calc>
@@ -38,6 +43,9 @@
         <div *ngSwitchCase="ActiveCalcPage.Other">
             <app-other-calc></app-other-calc>
         </div>
+        <div *ngSwitchCase="ActiveCalcPage.Add">
+          <app-add-item></app-add-item>
+      </div>
       </div>
 
     </div>

@@ -6,7 +6,8 @@ import {IProject} from '../../../interfaces/project';
 enum ActiveCalcPage {
   Tube,
   Resist,
-  Other
+  Other,
+  Add
 }
 
 @Component({

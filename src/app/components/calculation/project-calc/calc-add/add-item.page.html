@@ -1,6 +1,6 @@
-<div *ngIf="this.currentProject.tubes.length > 0; else noTubes" class="container-fluid">
-    <div *ngFor="let tube of this.currentProject.tubes">
-      cxvxc
+<div class="container-fluid">
+  <div style="text-align: left;">
+    Rohrwiederstand
     <div class="row" style="text-align: left;">
       <div class="col-lg-3"> <span> V m^3/h </span> <input class="form-control" type="text"> </div>
       <div class="col-lg-3"> <span>D mm  </span><input class="form-control" type="text"> </div>
@@ -8,15 +8,6 @@
       <div class="col-lg-3"> <span> H mm </span> <input class="form-control" type="text"> </div>
       <div class="col-lg-3"> <span> L m  </span><input class="form-control" type="text"> </div>
       <div class="col-lg-3"> <span> k mm </span> <input class="form-control" type="text"> </div>
-      <div class="col-lg-3"> <span> w m/s </span><input class="form-control" type="text"> </div>
-      <div class="col-lg-3"> <span> PA </span> <input class="form-control" type="text"> </div>
-      <div class="col-lg-3">  </div>
     </div>
   </div>
 </div>
-
-  <ng-template #noTubes>
-    <div class="container" style="margin-top: 20px;">
-        <span style="font-size: 16px;"> Noch keine Rohrreibungsverlust hinzugefügt! </span>
-    </div>
-  </ng-template>

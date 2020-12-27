@@ -25,7 +25,7 @@
 
 .card-header {
   background-color: #cbd7dc;
-  border-bottom: 0px;
+  border-color: #cbd7dc;
 }
 
 .nav-link {
@@ -42,10 +42,20 @@
   span {
     font-size: 20px;
     margin-right: 6px;
+    color: #506069;
   }
 
   input {
     width: 10%;
     background-color: white;
+  }
+}
+
+.add-nav-link {
+  background-color: #fc7900;
+  color: white;
+
+  .active {
+    background-color: #fc790050;
   }
 }

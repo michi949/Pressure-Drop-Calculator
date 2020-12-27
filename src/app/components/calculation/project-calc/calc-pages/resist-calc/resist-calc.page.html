@@ -1,1 +1,25 @@
-Resist
+
+<div *ngIf="this.currentProject.resists.length > 0; else noTubes" class="container-fluid">
+  <div *ngFor="let resist of this.currentProject.resists">
+    cxvxc
+  <div class="row" style="text-align: left;">
+    <div class="col-lg-3"> <span> Bez. </span> <input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> V1 m^3 /h </span><input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> D1 mm </span> <input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> W1 m/s </span> <input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> V2 m^3 /h  </span><input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> D2 mm </span> <input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> W2 m/s </span><input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> Zeta </span><input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> Stk. </span><input class="form-control" type="text"> </div>
+    <div class="col-lg-3"> <span> PA </span> <input class="form-control" type="text"> </div>
+    <div class="col-lg-3">  </div>
+  </div>
+</div>
+</div>
+
+<ng-template #noTubes>
+  <div class="container" style="margin-top: 20px;">
+   <span style="font-size: 16px;"> Noch keine Einzelwiederstände hinzugefügt! </span>
+  </div>
+</ng-template>
