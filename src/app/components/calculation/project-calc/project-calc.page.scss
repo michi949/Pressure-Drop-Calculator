@@ -17,6 +17,9 @@
   height: -moz-calc(100% - 67px); /* Firefox */
   height: -webkit-calc(100% - 67px); /* Chrome, Safari */
   height: calc(100% - 67px); /* IE9+ and future browsers */
+  max-height: -moz-calc(100% - 67px); /* Firefox */
+  max-height: -webkit-calc(100% - 67px); /* Chrome, Safari */
+  max-height: calc(100% - 67px); /* IE9+ and future browsers */
 }
 
 .card-body {

@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { IProject } from 'src/app/interfaces/project';
 import { ProjectManagement } from 'src/app/services/project-management.service';
 
@@ -13,12 +14,24 @@ import { ProjectManagement } from 'src/app/services/project-management.service';
   export class AddItemPage implements OnInit, OnDestroy  {
     public currentProject: IProject = null;
 
+    public tube = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+    });
+
+    public resist = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+    });
+
+    public other = new FormGroup({
+      name: new FormControl('', [Validators.required]),
+    });
+
     public constructor(public projectManagement: ProjectManagement) {}
 
     ngOnInit(): void {
       this.currentProject = this.projectManagement.currentProject;
     }
-    
+
     ngOnDestroy(): void {
 
     }

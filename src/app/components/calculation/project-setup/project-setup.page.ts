@@ -18,16 +18,11 @@ import {ProjectManagement} from '../../../services/project-management.service';
       description: new FormControl(''),
     });
 
-    public constructor(private projectManagement: ProjectManagement) {
+    public constructor(private projectManagement: ProjectManagement) {}
 
-    }
+    ngOnInit(): void {}
 
-    ngOnInit(): void {
-
-    }
-    ngOnDestroy(): void {
-
-    }
+    ngOnDestroy(): void {}
 
     public submitNewProject() {
       if (this.projectGroup.valid) {

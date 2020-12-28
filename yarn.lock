@@ -1372,6 +1372,11 @@
     "@types/source-list-map" "*"
     source-map "^0.6.1"
 
+"@types/xlsx@0.0.34":
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/@types/xlsx/-/xlsx-0.0.34.tgz#2b49e60dcbd3553a6bf211a3af1a6f4c7cb2c8b9"
+  integrity sha1-K0nmDcvTVTpr8hGjrxpvTHyyyLk=
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -1629,6 +1634,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+angular-modal-service@^0.15.6:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/angular-modal-service/-/angular-modal-service-0.15.6.tgz#7ccf51a4e4f674c9466e2774306e93a9765f0e37"
+  integrity sha512-tFXEeLDIMs/mrOKTJrQqCvYCWzUiVvz3e8N+bUPStGSRvFZTFOWPatVQGSYDKewZP/NJ6owwHaIyXoWYftrkpw==
 
 ansi-colors@4.1.1:
   version "4.1.1"
@@ -8601,6 +8611,13 @@ ts-pnp@^1.1.6:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
+
+ts-xlsx@0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/ts-xlsx/-/ts-xlsx-0.0.11.tgz#5a5fbcdd0f59d558c287af4c74fd5ea9a4bbeb39"
+  integrity sha1-Wl+83Q9Z1VjCh69MdP1eqaS76zk=
+  dependencies:
+    "@types/xlsx" "0.0.34"
 
 tslib@2.0.3, tslib@^2.0.0, tslib@^2.0.3:
   version "2.0.3"

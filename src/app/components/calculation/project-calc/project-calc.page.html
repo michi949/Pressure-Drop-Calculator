@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div class="card text-center">
+<div class="card text-center overflow-auto">
     <div class="card-header d-flex justify-content-between">
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
@@ -33,7 +33,7 @@
       </ul>
     </div>
     <div class="card-body overflow-auto">
-      <div [ngSwitch]="this.activePage">
+      <div [ngSwitch]="this.activePage" class="overflow-auto">
         <div *ngSwitchCase="ActiveCalcPage.Resist">
           <app-resist-calc></app-resist-calc>
         </div>
@@ -43,7 +43,7 @@
         <div *ngSwitchCase="ActiveCalcPage.Other">
             <app-other-calc></app-other-calc>
         </div>
-        <div *ngSwitchCase="ActiveCalcPage.Add">
+        <div *ngSwitchCase="ActiveCalcPage.Add" class="overflow-auto">
           <app-add-item></app-add-item>
       </div>
       </div>

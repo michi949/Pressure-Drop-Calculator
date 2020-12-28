@@ -25,10 +25,12 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@material-ui/core": "^4.11.0",
+    "angular-modal-service": "^0.15.6",
     "bootstrap": "4.5.3",
     "file-saver": "^2.0.5",
     "ng-bootstrap": "1.6.3",
     "rxjs": "~6.6.0",
+    "ts-xlsx": "0.0.11",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
