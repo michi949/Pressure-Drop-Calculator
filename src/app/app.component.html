@@ -28,10 +28,10 @@
               <span style="font-size: 18px;"> Tools </span>
             </div>
             <ul class="list-group">
-              <li class="list-group-item"> <button routerLink="/calculation" routerDirection="root" class="btn text-left"> <fa-icon [icon]="['fas','calculator']"></fa-icon> <span style="padding-left: 10px">Rechner</span></button></li>
-              <li class="list-group-item"> <button routerLink="/export" routerDirection="root"  class="btn text-left"> <fa-icon [icon]="['fas','save']"></fa-icon> <span style="padding-left: 10px">Speichern</span></button></li>
-              <li class="list-group-item"> <button routerLink="/import" routerDirection="root"  class="btn text-left"> <fa-icon [icon]="['fas','file-excel']"></fa-icon> <span style="padding-left: 10px">Import</span></button></li>
-              <li class="list-group-item"> <button routerLink="/settings" routerDirection="root" class="btn text-left"> <fa-icon [icon]="['fas','cog']"></fa-icon> <span style="padding-left: 10px">Settings</span></button></li>
+              <li class="list-group-item"> <button routerLink="/calculation" [ngClass]="{'active': router.url === '/calculation'}" routerDirection="root" class="btn text-left"> <fa-icon [icon]="['fas','calculator']"></fa-icon> <span style="padding-left: 10px">Rechner</span></button></li>
+              <li class="list-group-item"> <button routerLink="/export" [ngClass]="{'active': router.url === '/export'}"  routerDirection="root"  class="btn text-left"> <fa-icon [icon]="['fas','save']"></fa-icon> <span style="padding-left: 10px">Speichern</span></button></li>
+              <li class="list-group-item"> <button routerLink="/import" [ngClass]="{'active': router.url === '/import'}"  routerDirection="root"  class="btn text-left"> <fa-icon [icon]="['fas','file-excel']"></fa-icon> <span style="padding-left: 10px">Import</span></button></li>
+              <li class="list-group-item"> <button routerLink="/settings" [ngClass]="{'active': router.url === '/settings'}"  routerDirection="root" class="btn text-left"> <fa-icon [icon]="['fas','cog']"></fa-icon> <span style="padding-left: 10px">Settings</span></button></li>
             </ul>
           </div>
         </div>
