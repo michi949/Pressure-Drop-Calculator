@@ -38,7 +38,5 @@ import {ProjectManagement} from '../../../services/project-management.service';
       } else {
 
       }
-
     }
-
   }
