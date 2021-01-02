@@ -8,10 +8,12 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { ProjectManagement } from './services/project-management.service';
 import { CommonModule } from '@angular/common';
-import {CalculationPageModule} from './components/calculation/calculation.module';
+import {CalculationModule} from './components/calculation/calculation.module';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import {far} from '@fortawesome/free-regular-svg-icons';
 import {ImportModule} from './components/import/import.module';
+import {ExportModule } from './components/export/export.module';
+import {SettingsModule} from './components/settings/settings.module';
 
 
 @NgModule({
@@ -19,7 +21,12 @@ import {ImportModule} from './components/import/import.module';
     AppComponent,
   ],
   imports: [
+    ImportModule,
+    ExportModule,
+    CalculationModule,
+    SettingsModule,
     BrowserModule,
+    CommonModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
     AppRoutingModule,

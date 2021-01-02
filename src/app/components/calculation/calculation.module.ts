@@ -37,4 +37,4 @@ import { AddItemPage } from './project-calc/calc-add/add-item.page';
 
     ],
   })
-  export class CalculationPageModule { }
+  export class CalculationModule { }

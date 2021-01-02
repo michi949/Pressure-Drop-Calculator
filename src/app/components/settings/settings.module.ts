@@ -17,4 +17,4 @@ import { SettingsPage } from './settings.page';
 
     ],
   })
-  export class settingsModule { }
+  export class SettingsModule { }

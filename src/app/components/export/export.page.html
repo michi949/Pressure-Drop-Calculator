@@ -2,3 +2,11 @@
 <div class="container-fluid section-header">
   Speichern
 </div>
+
+<div *ngIf="this.projectManagement.currentProject !== null; else noProject">
+  dasd
+</div>
+
+<ng-template #noProject>
+  sdas
+</ng-template>
