@@ -18,3 +18,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   height: -webkit-calc(100% - 50px); /* Chrome, Safari */
   height: calc(100% - 50px); /* IE9+ and future browsers */
 }
+
+.warning-message-container {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  height: 200px !important;
+  color: #506069 !important;
+  font-size: 18px !important;
+}

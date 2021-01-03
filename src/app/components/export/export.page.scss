@@ -1,0 +1,22 @@
+.export-container {
+  margin-top: 20px;
+}
+.card-header {
+  background-color: #cbd7dc;
+  font-size: 18px;
+  border: 0;
+  padding: 0;
+
+ .icon-filed{
+   background-color: #fc7900;
+   padding: 10px 10px 10px 10px;
+   fa-icon {
+     color: white;
+   }
+   span {
+     margin-left: 5px;
+     margin-right: 5px;
+     color: white;
+   }
+ }
+}

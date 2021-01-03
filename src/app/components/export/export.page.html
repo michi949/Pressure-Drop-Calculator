@@ -3,10 +3,63 @@
   Speichern
 </div>
 
-<div *ngIf="this.projectManagement.currentProject !== null; else noProject">
-  dasd
+<div *ngIf="this.projectManagement.currentProject !== null; else noProject" class="container-fluid export-container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header d-flex align-items-center">
+          <div class="icon-filed">
+          <fa-icon class="p-1" [icon]="['fas','file-excel']"></fa-icon>
+            <span>  Excel </span>
+          </div>
+        </div>
+        <div class="card-body">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-2 d-flex align-items-center">
+                      <span style="text-align: center; font-size: 16px">Dateiname:</span>
+                  </div>
+                  <div class="col-lg-10">
+                    <input [formControl]="excelName" class="form-control" placeholder="Dateiname" type="text">
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end" style="margin-top: 10px">
+                  <button [disabled]="excelName.invalid" (click)="exportExcel()" type="button" style="background-color: #fc7900; color: white" class="btn"> Speichern </button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-header d-flex align-items-center">
+          <div class="icon-filed">
+            <fa-icon class="p-1" [icon]="['fas','file-pdf']"></fa-icon>
+            <span> PDF  </span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-2 d-flex align-items-center">
+                <span style="text-align: center; font-size: 16px">Dateiname:</span>
+              </div>
+              <div class="col-lg-10">
+                <input [formControl]="pdfName" class="form-control" placeholder="Dateiname" type="text">
+              </div>
+            </div>
+            <div class="d-flex justify-content-end" style="margin-top: 10px">
+              <button [disabled]="pdfName.invalid" (click)="exportPDF()" type="button" style="background-color: #fc7900; color: white" class="btn"> Speichern </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <ng-template #noProject>
-  sdas
+  <div class="container warning-message-container">
+    <a routerLink="/calculation" routerDirection="root"><button type="button"  class="btn"> Leider kein laufendes Projekt, bitte erstelle dafür eines! </button></a>
+  </div>
 </ng-template>
