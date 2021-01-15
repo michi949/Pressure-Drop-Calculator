@@ -1,13 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {ProjectManagement} from '../../../services/project-management.service';
 import {IProject} from '../../../interfaces/project';
+import { Modal } from '@material-ui/core';
 
 
 enum ActiveCalcPage {
   Tube,
   Resist,
-  Other,
-  Add
+  Other
 }
 
 @Component({
@@ -36,6 +36,11 @@ enum ActiveCalcPage {
 
     public changeActivePage(activePage: ActiveCalcPage) {
         this.activePage = activePage;
+    }
+
+
+    public openAddModal() {
+      
     }
 
   }

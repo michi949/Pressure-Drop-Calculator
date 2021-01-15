@@ -28,7 +28,7 @@
       </ul>
       <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
-          <a class="nav-link add-nav-link" [ngClass]="{'active': activePage === ActiveCalcPage.Add}" (click)="changeActivePage(ActiveCalcPage.Add)"> Hinzufügen </a>
+          <a class="nav-link add-nav-link" (click)="openAddModal()" > Hinzufügen </a>
         </li>
       </ul>
     </div>
@@ -43,9 +43,6 @@
         <div *ngSwitchCase="ActiveCalcPage.Other">
             <app-other-calc></app-other-calc>
         </div>
-        <div *ngSwitchCase="ActiveCalcPage.Add" class="overflow-auto">
-          <app-add-item></app-add-item>
-      </div>
       </div>
 
     </div>
