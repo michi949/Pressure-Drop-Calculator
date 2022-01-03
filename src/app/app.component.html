@@ -8,7 +8,7 @@
 
   <div class="justify-content-end state-bar">
     <div class="dropdown">
-      <button disabled class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button disabled title="Sprachauswahl" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <fa-icon [icon]="['fas','language']"></fa-icon> Deutsch
       </button>
       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -20,7 +20,7 @@
   </div>
 </nav>
 
-  <div class="content container-fluid">
+  <div class="container-fluid content">
       <div class="row">
         <div class="col-lg-2">
           <div class="sidebar">
@@ -35,7 +35,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-10">
+        <div class="col-lg-10 overflow-auto">
               <router-outlet class="h-100"></router-outlet>
         </div>
       </div>

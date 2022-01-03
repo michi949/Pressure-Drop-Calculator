@@ -27,6 +27,9 @@
   height: -moz-calc(100% - 140px); /* Firefox */
   height: -webkit-calc(100% - 140px); /* Chrome, Safari */
   height: calc(100% - 140px); /* IE9+ and future browsers */
+  max-height: -moz-calc(100% - 140px); /* Firefox */
+  max-height: -webkit-calc(100% - 140px); /* Chrome, Safari */
+  max-height: calc(100% - 140px); /* IE9+ and future browsers */
   margin: 20px 0 20px 0;
 
   .row {
